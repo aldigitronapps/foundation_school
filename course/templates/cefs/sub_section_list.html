@@ -1,0 +1,27 @@
+{% extends 'cefs/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<nav class="navy"><!-- <img src="{% static 'imgs/cefs.jpg' %}"> -->
+		<a href="{% url 'course:subchapter_list' pk=subchapter.pk %}"><img class ="backArrow" src="{% static 'imgs/backArrow.PNG' %}"></a>
+
+		<div class="titleHeader">
+			<p></p>
+			<p class='courseTitle'><i>{{ subchapter.title}}</i> <br>>>> {{ sub_chapter.title}}</p>
+		</div>
+
+	</nav>
+<div class="content">
+	{% for subsection in sub_sections %}
+	<a href="{% url 'course:detail'  pk=subsection.sub_chapter.chapter.pk slug=subsection.sub_chapter.slug slug2=subsection.slug %}">
+
+	<div class="subsectionContent">
+		  	<div class="section">
+		  		{{ subsection.title }}
+		  	</div>
+	</div>
+	</a>
+	<div class="rightFoot">&copy; 2016 Christ Embassy Inc</div>
+{% endfor %}
+</div>
+{% endblock %}

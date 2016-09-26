@@ -1,0 +1,165 @@
+h1 a {
+	color: green;
+	font-family: 'Lobster';
+}
+
+body {
+	padding: 0px 2em;
+	background: #E2E2E2;
+	margin: 2em auto;
+    max-width: 1000px;
+}
+#maindiv {
+	background-color: white;
+/*	margin: 2em auto;
+    max-width: 1000px;*/
+}
+
+.page-header {
+	background: #1982D1;
+	background: -webkit-linear-gradient(#1982D1, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1982D1, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1982D1, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1982D1, #ffffff); /* Standard syntax (must be last) */
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 20px 0px 0px 0px;
+	position: relative;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+	color: black;
+	font-size:36pt;
+	text-decoration: none;
+}
+
+.content {
+	margin-left: 20px
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Lobster', cursive;
+	padding: 10px;
+}
+
+.date {
+	float: right;
+	color: #828282;
+}
+
+.save {
+	float: right;
+}
+
+.post-form textarea, .post-form input {
+	width: 700px;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+	color: #ffffff;
+	float: right;
+	font-size: 26pt;
+	margin-right: 20px;
+}
+
+.post {
+	margin-bottom: 40px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	margin-left: 15px;
+}
+
+.post h1 a, .post h1 a:visited {
+	color: #000000;
+} 
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+}
+
+p {
+    margin: 0px 10px 10px;
+    line-height: 180%;
+}
+
+#searchpost {
+
+	position: absolute;
+    top: 8.0em;
+    right: 0.6%;
+    text-align: right;
+}
+
+footer {
+
+	clear: both;
+	width: 100%;
+}
+
+#feettext {
+
+background: #F9F9F9 none repeat scroll 0% 0%;
+border-top: 2px solid #DDD;
+color: #666;
+font-size: 12px;
+line-height: 2.2em;
+padding: 2.2em 0.5em;
+text-align: center;
+}
+
+}
+
+
+}
+
+.page-header a img {
+/*height: auto;
+/*display: block;*/
+width: 100%;
+/*clear: both;*/
+
+}
+
+#access {
+/*clear: both;*/
+display: block;
+color: white;
+
+
+}
+.navbar a b {
+	color: white;
+}
+
+.eachpost {
+
+	margin: 0px;
+    padding-bottom: 0px;
+}
+
+hr {
+	
+	font-weight: bolder;
+}
+
+aside {
+	float: right;
+
+}
+
+a:focus, a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.caption a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.caption a:hover {
+    color: #000000;
+    text-decoration: none;
+}

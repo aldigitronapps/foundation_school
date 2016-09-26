@@ -1,0 +1,49 @@
+{% extends 'blog/base.html' %}
+	{% block content %}
+<container>
+	<div class='eachpost'>
+			
+		{% for post in posts %}
+		  <div>
+		    <div >
+		    {% if post.image %}
+		    <a href="{% url 'post_detail' pk=post.pk %}">
+		      <img src="{{post.image.url}}" class='img-responsive img-rounded'  alt="...">
+		    </a>
+		    {% endif %}
+
+		      <div class="caption">
+		      	<h3>{% if post.draft %} <span style='color:red;'>Staff Only: Draft</span>{% endif %}</h3>
+		        <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }} <small>{{ post.published_date|timesince }} ago</small></a></h3>
+		        <p><b>Author: {{ post.user }}</b></p>
+		        <p> <span style='text-decoration:none;'><a href="{% url 'post_detail' pk=post.pk %}">{{ post.text|linebreaks|truncatechars:300 }}</a></p>
+		        
+		        <!-- <p><a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-primary" role="button">View</a> </p> -->
+		        <hr/>
+		      </div>
+		    </div>
+		  </div>
+		{% endfor %}
+	</div>
+
+		<div class="pagination">
+			<span class="step-links">
+				{% if posts.has_previous %}
+					<a href="?page={{ posts.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a>
+				{% endif %}
+
+				<span class="current">
+					Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+				</span>
+				{% if posts.has_next %}
+					<a href="?page={{ posts.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">next</a>
+				{% endif %}
+			</span>
+		</div>
+
+		</div>
+		</container>
+	{% endblock %}
+
+
+	

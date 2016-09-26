@@ -1,0 +1,101 @@
+body { 
+	padding-top: 70px;
+	
+
+ }
+
+.jumbotron {
+	background: url("/img/jumbo1.jpg") fixed center no-repeat;
+	/*background-image: url("img/jumbo1.jpg");*/
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	background-color: rgba(12, 12, 12, 0);
+	color: #fff;
+}
+
+.jumbotron p {
+	font-style: italic;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.fa{
+	color:rgba(15, 15, 14, 0.6);
+}
+
+h1 span {
+	color: black;
+}
+
+article{
+	background-color: rgba(255, 255, 255, 1);
+}
+
+aside {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+footer {
+	padding: 1em 1em 0 1em;
+	border-top: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(48, 46, 46, 1.0);
+	margin: 0px;
+
+}
+
+p.sect {
+	font-family: sans-serif;
+	line-height: 140%;
+	color: black;
+	text-align: justify;
+}
+
+article p img {
+	margin-left: 5px;
+	border-radius: 3px solid #999;
+	padding: 3px;
+	border-radius: 10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-box-shadow:5px 5px 10px #999;
+}
+
+pre{
+	background-color: rgba(144, 144, 144, 0.96);
+}
+
+
+.navbar {
+	margin: 0;
+}
+
+
+
+.about {
+	
+	background-color: rgba(12, 12, 12, 0.14);
+	border: 1px solid;
+	border-radius: 3px;
+	padding: 5px;
+	line-height: 2em
+}
+
+
+
+.navbar-inverse .navbar-toggle {
+	color: white;
+	font-weight: bold;
+	border-color: white;
+}
+
+.breadcrumb {
+	background-color: rgba(255, 255, 255, 1);
+	margin: 0px;
+}
+
