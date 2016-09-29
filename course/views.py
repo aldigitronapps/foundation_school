@@ -22,4 +22,12 @@ def subsection_list(request, pk, slug):
 def detail(request, pk, slug, slug2):
 	course = get_object_or_404(SubSection, slug=slug2)
 	subsection = get_object_or_404(SubChapter, slug=slug)
-	return render(request, 'cefs/detail.html', {'course':course, 'subsection':subsection})
+	course_id = course.pk
+	next_course_pk = course_id + 1
+	next_course = get_object_or_404(SubSection, pk=next_course_pk)
+	context = {
+	'course':course,
+	'subsection':subsection,
+	'next_course': next_course,
+	}
+	return render(request, 'cefs/detail.html', context)

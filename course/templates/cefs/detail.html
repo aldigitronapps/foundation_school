@@ -1,6 +1,9 @@
 {% extends 'cefs/base.html' %}
 {% load staticfiles %}
 
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
+{% endblock %}
 
 {% block content %}
 
@@ -21,9 +24,14 @@
 
   	<div class="logos">
   		<div class="qa"><a href="#"><img src="{% static 'imgs/qa.PNG' %}"></a></div>
-  		<div class="greenButton"><a href="#">
-  			<img src="{% static 'imgs/greenButton.PNG' %}"></a>
-  		</div>
+		<div class="greenButton">
+			
+			
+				<a href= "{{next_course.get_absolute_url}}">
+
+	  			<img src="{% static 'imgs/greenButton.PNG' %}">
+				</a>
+		
   	</div>
 </div>
 	<div class="rightFoot">&copy; 2016 Christ Embassy Inc</div>

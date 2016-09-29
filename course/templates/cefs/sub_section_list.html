@@ -1,5 +1,10 @@
 {% extends 'cefs/base.html' %}
 {% load staticfiles %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/sub_section_list.css' %}">
+{% endblock %}
 
 {% block content %}
 	<nav class="navy"><!-- <img src="{% static 'imgs/cefs.jpg' %}"> -->
@@ -21,7 +26,8 @@
 		  	</div>
 	</div>
 	</a>
-	<div class="rightFoot">&copy; 2016 Christ Embassy Inc</div>
+	
 {% endfor %}
 </div>
+<div class="rightFoot">&copy; 2016 Christ Embassy Inc</div>
 {% endblock %}

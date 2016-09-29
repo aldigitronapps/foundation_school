@@ -35,7 +35,6 @@ urlpatterns = [
     url(r'^api/fs/', include(router.urls)),
     url(r'^api/fs/course/', include("course.api.urls", namespace="course_api")),
     url(r'^course/', include("course.urls", namespace="course")),
-    url(r'^blog/', include("blog.urls", namespace="blog")),
     url(r'', include("authentication.urls", namespace="authentication")),
 ]
 
