@@ -7,18 +7,23 @@
 {% endblock %}
 
 {% block content %}
-	<h1 class='themer'>Christ Embassy Foundation School</h1>
 
+	<div class="theNavBar">
+		<div class="titleHeader">
+			<p class='schoolTitle'>Christ Embassy Foundation School</p>
+		</div>
+	</div>
+	<div class="classContainer">
 	{% for chapter in chapters %}
 	<a href="{% url 'course:subchapter_list' pk=chapter.pk %}">
-	<div class="classes">
-		
-		<h2>
-			 Class {{ chapter.pk }}: {{ chapter.title }}
-		</h2>
-	</div>
-		</a>
+		<div class="classes">
+			<h2>
+				 Class {{ chapter.pk }}: {{ chapter.title }}
+			</h2>
+		</div>
+	</a>
 
 	{% endfor %}
-	<div class="rightFoot">&copy; 2016 Christ Embassy Inc</div>
+	</div>
+
 {% endblock %}

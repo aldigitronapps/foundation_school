@@ -7,17 +7,18 @@
 
 {% block content %}
 
-	<div class="navy"><!-- <img src="{% static 'imgs/cefs.jpg' %}"> -->
-		<a href="{% url 'course:chapter_list' %}"><img class ="backArrow" src="{% static 'imgs/backArrow.PNG' %}"></a>
+	<div class="theNavBar">
+		<a href="{% url 'course:chapter_list' %}">
+			<img class ="backArrow" src="{% static 'imgs/backArrow.PNG' %}">
+		</a>
 
 		<div class="titleHeader">
 			<p class='chapterTitle'>{{chapter.title}}</p>
 		</div>
-
 	</div>
 
 
-<div class="content">
+	<div class="content">
 	{% for subchapter in subchapters %}	
 	<a href="{% url 'course:subsection_list' pk=subchapter.chapter.pk slug=subchapter.slug %}">
 		<div class="subsectionContent">
@@ -30,5 +31,4 @@
 	{% endfor %}
 	</div>
 
-	<div class="rightFoot">&copy; 2016 Christ Embassy Inc</div>
 {% endblock %}
